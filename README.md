@@ -18,6 +18,54 @@ for _, layer := range packer.Layers() {
   fmt.Println("PACKET LAYER:", layer.LayerType())
 }
 
+
+
+ethP := gopacket.NewPacket(p1, layers.LayerTypeEthernet, gopacket.Default)
+
+ipP := gopacket.NewPacket(p2, layers.LayerTypeIPv6, gopacket.Default)
+
+tcpP := gopaket.NewPacket(p3, layers.LayerTypeTCP, gopacket.Default)
+
+packetSource := ...
+for packet := range packetSource.Packets() {
+  handlePacket(packet)
+}
+
+
+packet := gopacket.NewPacket(myPacketData, layers.LayerTypeEthrnet, gopacket.Lazy)
+
+ip4 := packet.Layer(layers.LayerTypeIPv4)
+
+layers := packet.Layers()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 ```
